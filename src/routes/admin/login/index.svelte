@@ -2,8 +2,8 @@
   <title>Login - Tindin</title>
 </svelte:head>
 
-<section class="page__login">
-  <div class="login__card">
+<section class="page">
+  <div class="page__card">
     <img
       src="/logo_tindin_120x120px.webp"
       alt="logo Tindin"
@@ -28,18 +28,18 @@
 </section>
 
 <style lang="scss">
-  .page__login {
+  .page {
     height: 100vh;
     background-color: #b8306d;
     display: grid;
     place-items: center;
-    .login__card {
+    .page__card {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: white;
 
-      img {
+      > img {
         margin: 3rem 0 3rem;
       }
 
@@ -93,8 +93,8 @@
   }
 
   @media screen and (min-width: 480px) {
-    .page__login {
-      .login__card {
+    .page {
+      .page__card {
         background-color: white;
         border-radius: 2rem;
         width: 400px;
@@ -102,7 +102,7 @@
     }
   }
   @media screen and (max-width: 480px) {
-    .login__card {
+    .page__card {
       width: 100vw;
       height: 100vh;
       border-radius: 0;
